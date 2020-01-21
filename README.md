@@ -1,7 +1,8 @@
 # Hello everyone!
+### NOTE
+To everyone who is studying JAVA and any algorithms/loops/arrays
 
-In this repository you will be able to find ways
-to work with JAVA and arrays.
+**Feel free to use this while studying, try not to only copy solution, but to understand it**
 
 I will try to comment as much as I can, so it would be much easier
 to understand how everything works.
@@ -32,3 +33,4 @@ So make sure to add `-1` (when it is necessary), to array.length, to work with i
 
 ### **Navigation**
 
+Coming soon..
