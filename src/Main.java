@@ -1,15 +1,18 @@
 import arrays.*;
-import methods.PrintResult;
 
 public class Main {
     public static void main(String[] args) {
 
-        int[] testArray = new int[25];
+        int[] testArray = new int[10];
 
-        FillWithNumbers.setDebugMode(true);
+
         FillWithNumbers goFill = new FillWithNumbers();
-
         goFill.fillOneByOne(testArray);
-        goFill.fillWithTwo(testArray);
+        goFill.fillPowTwo(testArray);
+        goFill.fillOddNumbers(testArray);
+        goFill.fillEvenNumbers(testArray);
+        goFill.fillFibonacciNumber(testArray);
+        FillWithNumbers.setDebugMode(true);
+//        goFill.fillSum(testArray);
     }
 }
