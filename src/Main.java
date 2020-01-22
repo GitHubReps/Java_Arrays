@@ -7,12 +7,16 @@ public class Main {
 
 
         FillWithNumbers goFill = new FillWithNumbers();
+
+
         goFill.fillOneByOne(testArray);
         goFill.fillPowTwo(testArray);
         goFill.fillOddNumbers(testArray);
         goFill.fillEvenNumbers(testArray);
         goFill.fillFibonacciNumber(testArray);
+        goFill.fillSum(testArray);
+        goFill.fillGeometricProgression(testArray, 3);
         FillWithNumbers.setDebugMode(true);
-//        goFill.fillSum(testArray);
+        goFill.fillArithmeticProgression(testArray, 3);
     }
 }

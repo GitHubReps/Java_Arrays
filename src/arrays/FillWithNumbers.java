@@ -60,4 +60,36 @@ public class FillWithNumbers {
             print.printIt(arr);
         }
     }
+
+    public void fillSum (int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            int tmp = 0;
+            for (int j = 0; j <= i; j++) {
+                tmp = tmp + arr[j];
+            }
+            arr[i] = tmp;
+        }
+        if (debugMode == true) {
+            print.printIt(arr);
+        }
+    }
+
+    public void fillGeometricProgression (int[] arr, int exp) {
+        arr[0] = exp;
+        for (int i = 1; i < arr.length; i++) {
+            arr[i] = arr[i-1] * exp;
+        }
+        if (debugMode == true) {
+            print.printIt(arr);
+        }
+    }
+
+    public void fillArithmeticProgression (int[] arr, int exp) {
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = exp * i;
+        }
+        if (debugMode == true) {
+            print.printIt(arr);
+        }
+    }
 }
