@@ -4,8 +4,6 @@ import methods.PrintResult;
 
 public class FillWithNumbers {
 
-    PrintResult print = new PrintResult();
-
     private static boolean debugMode = false;
 
     public static void setDebugMode(boolean debugMode) {
@@ -17,7 +15,7 @@ public class FillWithNumbers {
             arr[i] = i + 1;
         }
         if (debugMode == true) {
-            print.printIt(arr);
+            PrintResult.printIt(arr);
         }
     }
 
@@ -26,7 +24,7 @@ public class FillWithNumbers {
             arr[i] = i * 2 + 1;
         }
         if (debugMode == true) {
-            print.printIt(arr);
+            PrintResult.printIt(arr);
         }
     }
 
@@ -35,7 +33,7 @@ public class FillWithNumbers {
             arr[i] = i + i;
         }
         if (debugMode == true) {
-            print.printIt(arr);
+            PrintResult.printIt(arr);
         }
     }
 
@@ -45,7 +43,7 @@ public class FillWithNumbers {
             arr[i] = arr[i-1] * 2;
         }
         if (debugMode == true) {
-            print.printIt(arr);
+            PrintResult.printIt(arr);
         }
     }
 
@@ -57,7 +55,7 @@ public class FillWithNumbers {
             arr[i] = arr[i-2] + arr[i-1];
         }
         if (debugMode == true) {
-            print.printIt(arr);
+            PrintResult.printIt(arr);
         }
     }
 
@@ -70,7 +68,7 @@ public class FillWithNumbers {
             arr[i] = tmp;
         }
         if (debugMode == true) {
-            print.printIt(arr);
+            PrintResult.printIt(arr);
         }
     }
 
@@ -80,7 +78,7 @@ public class FillWithNumbers {
             arr[i] = arr[i-1] * exp;
         }
         if (debugMode == true) {
-            print.printIt(arr);
+            PrintResult.printIt(arr);
         }
     }
 
@@ -89,7 +87,7 @@ public class FillWithNumbers {
             arr[i] = exp * i;
         }
         if (debugMode == true) {
-            print.printIt(arr);
+            PrintResult.printIt(arr);
         }
     }
 }
