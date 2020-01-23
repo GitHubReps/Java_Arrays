@@ -4,19 +4,20 @@ import methods.*;
 public class Main {
     public static void main(String[] args) {
 
-        CreateArray.setDebugMode(true);
-        int[] testArray = CreateArray.arrayCreator(20, 5, 1000);
-/*
-        FillWithNumbers goFill = new FillWithNumbers();
-        FillWithNumbers.setDebugMode(true);
-        goFill.fillOneByOne(testArray);
-        goFill.fillPowTwo(testArray);
-        goFill.fillOddNumbers(testArray);
-        goFill.fillEvenNumbers(testArray);
-        goFill.fillFibonacciNumber(testArray);
-        goFill.fillSum(testArray);
-        goFill.fillGeometricProgression(testArray, 3);
-        FillWithNumbers.setDebugMode(true);
-        goFill.fillArithmeticProgression(testArray, 3); */
+        createRandomArray.setDebugMode(false);
+        int[] testArray = createRandomArray.arrayCreator(20, 5, 1000);
+
+        ArrayMethods fillArray = new ArrayMethods();
+
+        ArrayMethods.setDebugMode(true);
+        fillArray.createAscendingArray(testArray);
+        ArrayMethods.setDebugMode(false);
+        fillArray.createExponentTwoArray(testArray);
+        fillArray.createOddNumbersArray(testArray);
+        fillArray.createEvenNumbersArray(testArray);
+        fillArray.createFibonacciNumberArray(testArray);
+        fillArray.createPreviousNumbersSumArray(testArray);
+        fillArray.createGeometricProgressionArray(testArray, 3);
+        fillArray.createArithmeticProgressionArray(testArray, 3);
     }
 }

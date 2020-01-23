@@ -2,12 +2,12 @@ package methods;
 
 import java.util.Random;
 
-public class CreateArray {
+public class createRandomArray {
 
     private static boolean debugMode = false;
 
     public static void setDebugMode(boolean debugMode) {
-        CreateArray.debugMode = debugMode;
+        createRandomArray.debugMode = debugMode;
     }
 
     public static int[] arrayCreator(int size, int firstElement, int lastElement) {
