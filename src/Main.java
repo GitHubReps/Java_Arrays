@@ -23,7 +23,7 @@ public class Main {
         fillArray.createGeometricProgressionArray(testArray, 3);
         fillArray.createArithmeticProgressionArray(testArray, 3); */
         ArraySearch arraySearch = new ArraySearch();
-        int answer = arraySearch.binarySearch(testArray, 131);
-        System.out.println(answer);
+        int answer = arraySearch.binarySearch(testArray, 100);
+        System.out.printf("Element %d found", answer);
     }
 }
